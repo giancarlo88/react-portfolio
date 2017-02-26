@@ -12,11 +12,10 @@ body, html, #root {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-
-.title__signature {
-  background-image: url(../assets/signature.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-  height: 100px;
-  width: 100%; }
+  .title__signature {
+    background-image: url(../assets/signature.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    height: 100px;
+    width: 100%; }
