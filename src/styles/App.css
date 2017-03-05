@@ -12,10 +12,43 @@ body, html, #root {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  .title__signature {
-    background-image: url(../assets/signature.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    height: 100px;
-    width: 100%; }
+
+.title__signature {
+  background-image: url(../assets/signature.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  height: 100px;
+  width: 100%; }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; }
+
+@media (min-width: 768px) {
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+.projects__project-tile {
+  cursor: pointer;
+  min-height: 200px;
+  margin: 10px;
+  padding: 10px;
+  transition: background-size 1s ease-in-out;
+  background-size: 100%;
+  background-position: 50%;
+  border-radius: 5px;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+  box-shadow: 2px 2px 16px 2px #aaaaaa;
+  width: 300px; }
+
+.projects__project-tile:focus, .projects__project-tile:hover {
+  background-size: 110%; }
+
+.projects__title, .projects__description {
+  background: rgba(255, 255, 255, 0.2);
+  color: #111111; }

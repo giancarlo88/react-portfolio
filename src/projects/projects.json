@@ -1,0 +1,81 @@
+[
+  {
+    "title": "Glenn Gould Tribute Page", 
+    "description": "My first Free Code Camp Project. This is a self-designed tribute page.",
+    "image":"tp.png",
+    "tags": ["introductory", "free code camp", "api"]
+  },
+  {
+    "title": "Weather App", 
+    "description": "A simple app that uses browser geolocation and a free API to show you the weather.",
+    "image":"wa.png",
+    "tags": ["introductory", "free code camp", "api"]
+  },
+  {
+    "title": "Random Quote Generator", 
+    "description": "'In order to obtain the impossible, one must attempt the absurd' -- M. de Cervantes",
+    "image":"qg.png",
+    "tags": ["introductory", "free code camp", "api"]
+  },
+  {
+    "title": "Javascript BlackJack", 
+    "description": "Play 21 BlackJack in your browser!",
+    "image":"bj.png",
+    "tags": ["games"]
+
+  },
+  {
+    "title": "Javascript Calculator", 
+    "description": "For the maths-lover in all of us",
+    "image":"jc.png",
+    "tags": ["free code camp"]
+  },
+  {
+    "title": "Pomodoro Timer", 
+    "description": "Work 25 minutes (or one pomodoro) at a time.",
+    "image":"pt.png",
+    "tags": ["free code camp", "utilities"]
+  },
+  {
+    "title": "Wikipedia Search Tool", 
+    "description": "Use Wikipedia's API to search for and visit a Wikipedia page. Or visit a random one for fun.",
+    "image":"wv.png",
+    "tags": ["free code camp", "utilities"]
+  },
+  {
+    "title": "Tic Tac Toe", 
+    "description": "Replaces a pen and paper with Javascript",
+    "image":"ttt.png",
+    "tags": ["free code camp", "games"]
+  },
+  {
+    "title": "Twitch.tv API Tool ", 
+    "description": "Grab a list of streamers and see if they're streaming.",
+    "image":"tv.png",
+    "tags": ["free code camp", "react", "utilities", "api"]
+  },
+  {
+    "title": "Markdown Previewer", 
+    "description": "React app that displays Markdown as you type.",
+    "image":"mp.png",
+    "tags": ["free code camp", "react", "utilities"]
+  },
+  {
+    "title": "Free Code Camp Leaderboard", 
+    "description": "View and arrange the top 100 users of Free Code Camp",
+    "image":"lb.png",
+    "tags": ["free code camp", "react"]
+  },
+  {
+    "title": "Simon", 
+    "description": "It's you versus your memory.",
+    "image":"s.png",
+    "tags": ["free code camp", "games"]
+  },
+  {
+    "title": "The London Learning Map", 
+    "description": "Have a look at where I spent a good part of my free time learning how to code across London.",
+    "image":"",
+    "tags": ["react", "maps"]
+  }
+]

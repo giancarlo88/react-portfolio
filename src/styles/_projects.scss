@@ -1,0 +1,39 @@
+$border-style: 1px solid #aaaaaa;
+
+.projects {
+    display: flex; 
+    flex-direction: column;
+    padding: 20px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__project-tile {
+        cursor: pointer;
+        min-height: 200px;
+        margin: 10px;
+        padding: 10px;
+        transition: background-size 1s ease-in-out;
+        background-size: 100%;
+        background-position: 50%;
+        border-radius: 5px;
+        border-bottom: $border-style;
+        border-right: $border-style;
+        box-shadow: 2px 2px 16px 2px #aaaaaa;
+        width: 300px;
+
+        &:focus, 
+        &:hover {
+            background-size: 110%;
+        }
+    }
+
+    &__title, 
+    &__description {
+        background: rgba(255, 255, 255, .2);
+        color: #111111;
+    }
+}
