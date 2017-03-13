@@ -1,7 +1,20 @@
 import React, { Component } from 'react'
 import projects from '../projects/projects.json'
+import FilterTags from './FilterTags'
+import ProjectTiles from './ProjectTiles'
 
-import ProjectTile from './ProjectTile'
+const getTags = (projects) => {
+  // Look through the tag properties of all the projects and add them (once) to an array
+  return projects.reduce((otherTags, currentProject) => {
+    let newTags = []
+    currentProject.tags.forEach((tag) => {
+      // Check if the tag was added already
+      return otherTags && otherTags.indexOf(tag) < 0 && newTags.push(tag)
+    })
+    // Combine any newly found tags with what's been added already.
+    return [...otherTags, ...newTags]
+    }, ['all'] )
+}
 
 class Projects extends Component {
   constructor (props) {
@@ -9,27 +22,26 @@ class Projects extends Component {
     this.state = {
       filterTag: ''
     }
+    this.handleChangeTag = this.handleChangeTag.bind(this)
+  }
+  handleChangeTag(tag) {
+    this.setState({
+      filterTag: tag
+    })
   }
   render() {
-    console.log(projects)
+    const tags = getTags(projects)
+    console.log(tags)
     return (
       <div className='projects'>
-        { projects.map( (item, index) => {
-            let currentFilter = this.state.filterTag
-            let tile = 
-              <ProjectTile 
-                key={index}
-                title={item.title}
-                description={item.description}
-                imageUrl={item.image}
-                tags={item.tags}
-              />
-              // Return only tiles that match the current filter. If no filters are set, return all tiles.
-             return (
-            (( currentFilter && item.tags.indexOf(currentFilter) > 0) || !currentFilter ) && tile
-              )
-            }
-        )}
+        <FilterTags
+          tags={tags}
+          handleChangeTag={this.handleChangeTag}
+        />
+        <ProjectTiles
+          projects={projects} 
+          currentFilter={this.state.filterTag}
+        />
       </div>
     )
   }

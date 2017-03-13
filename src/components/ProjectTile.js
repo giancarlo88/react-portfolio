@@ -11,10 +11,10 @@ const ProjectTile = props => {
       }}
       >
       <h3 className='projects__title'>
-        {props.title}
+        <span>{props.title}</span>
       </h3>
       <p className='projects__description'>
-        {props.description}
+        <span>{props.description}</span>
       </p>
     </div>
   )

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
 
 class Title extends Component {
   render() {
@@ -7,9 +8,9 @@ class Title extends Component {
         <h1>Giancarlo Galliani</h1>
         <div className='title__signature'/>
           <h4>
-            <a className="title__link" href="#about">[About]</a> 
-            <a className="title__link" href="#links">[Projects]</a>  
-            <a className="title__link" href="#sm">[Contact]</a>
+            <Link className="title__link" to="about">[About]</Link> 
+            <Link className="title__link" to="projects">[Projects]</Link>  
+            <Link className="title__link" to="sm">[Contact]</Link>
           </h4>
         </div>
       )
