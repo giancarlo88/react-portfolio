@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import projects from '../projects/projects.json'
 import FilterTags from './FilterTags'
 import ProjectTiles from './ProjectTiles'
+import Header from './Header'
 
 const getTags = (projects) => {
   // Look through the tag properties of all the projects and add them (once) to an array
@@ -20,13 +21,20 @@ class Projects extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      filterTag: ''
+      filterTag: '',
+      navOpen: false
     }
     this.handleChangeTag = this.handleChangeTag.bind(this)
+    this.handleNavClick = this.handleNavClick.bind(this)
   }
   handleChangeTag(tag) {
     this.setState({
       filterTag: tag
+    })
+  }
+  handleNavClick() {
+    this.setState({
+      navOpen: !this.state.navOpen
     })
   }
   render() {
@@ -34,12 +42,13 @@ class Projects extends Component {
     console.log(tags)
     return (
       <div className='projects'>
+        <Header navOpen={this.state.navOpen} handleNavClick={this.handleNavClick}/>
         <FilterTags
           tags={tags}
           handleChangeTag={this.handleChangeTag}
         />
         <ProjectTiles
-          projects={projects} 
+          projects={projects}
           currentFilter={this.state.filterTag}
         />
       </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import ProjectTile from './ProjectTile'
 
 const ProjectTiles = props => {
@@ -23,6 +23,16 @@ const ProjectTiles = props => {
         )}
       </div>
   )
+}
+
+ProjectTiles.propTypes = {
+  projects: PropTypes.array,
+  currentFilter: PropTypes.string
+}
+
+ProjectTiles.defaultProps = {
+  projects: [], 
+  currentFilter: ''
 }
 
 export default ProjectTiles

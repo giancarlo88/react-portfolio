@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 const FilterTags = props => {
   let { tags, handleChangeTag } = props
@@ -22,5 +22,15 @@ const FilterTags = props => {
   </div>
   )
 }
+
+FilterTags.propTypes = {
+  tags: PropTypes.array,
+  handleChangeTag: PropTypes.func
+}
+
+FilterTags.defaultProps = {
+  tags: []
+}
+
 
 export default FilterTags
