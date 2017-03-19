@@ -3,7 +3,7 @@ import projects from '../projects/projects.json'
 import FilterTags from './FilterTags'
 import ProjectTiles from './ProjectTiles'
 import Header from './Header'
-import Transition from './Transition'
+import FadeTransition from './FadeTransition'
 
 const getTags = (projects) => {
   // Look through the tag properties of all the projects and add them (once) to an array
@@ -23,35 +23,20 @@ class Projects extends Component {
     super(props)
     this.state = {
       filterTag: 'all',
-      navOpen: false
     }
     this.handleChangeTag = this.handleChangeTag.bind(this)
-    this.handleNavClick = this.handleNavClick.bind(this)
   }
   handleChangeTag(tag) {
     this.setState({
       filterTag: tag
     })
   }
-  handleNavClick() {
-    this.setState({
-      navOpen: !this.state.navOpen
-    })
-  }
   render() {
     const tags = getTags(projects)
     console.log(tags)
     return (
-      <Transition
-        transitionName='fade'
-        appearTimeout={500}
-        leaveTimeout={100000}
-        enterTimeout={100}
-        transitionAppear
-        transitionLeave
-      >
+      <FadeTransition>
       <div className='projects'>
-        <Header navOpen={this.state.navOpen} handleNavClick={this.handleNavClick}/>
         <FilterTags
           tags={tags}
           handleChangeTag={this.handleChangeTag}
@@ -62,7 +47,7 @@ class Projects extends Component {
           currentFilter={this.state.filterTag}
         />
       </div>
-    </Transition>
+    </FadeTransition>
     )
   }
 }

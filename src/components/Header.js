@@ -1,14 +1,27 @@
-import React, { PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react'
 import Nav from './Nav'
 
-const Header = props => {
-  const { handleNavClick, navOpen } = props
+class Header extends Component {
+  constructor(){
+    super()
+    this.state = {
+      navOpen: false
+    }
+    this.handleNavClick = this.handleNavClick.bind(this)
+  }
+  handleNavClick() {
+    this.setState({
+      navOpen: !this.state.navOpen
+    })
+  }
+  render(){
   return (
-    <header className='header'>
-      <div onClick={handleNavClick} className='header__burger-menu' />
-      <Nav isOpen={navOpen} handleCloseClick={handleNavClick} />
-    </header>
-  )
+      <header className='header'>
+        <div onClick={this.handleNavClick} className='header__burger-menu' />
+        <Nav isOpen={this.state.navOpen} handleCloseClick={this.handleNavClick} />
+      </header>
+    )
+}
 }
 
 Header.propTypes = { 

@@ -7,6 +7,14 @@
             transition: all .5s ease-out;
         }
     }
+    &-enter {
+        opacity: 0;
+        
+        &-active {
+            opacity: 1;
+            transition: all .5s ease-out;
+        }
+    }
     
     &-leave {
         opacity: 1;

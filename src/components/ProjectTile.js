@@ -1,17 +1,11 @@
 import React, { PropTypes } from 'react'
 import makeUrl from '../utils/makeUrl'
-import Transition from './Transition'
+import FadeTransition from './FadeTransition'
 
 const ProjectTile = props => {
   let url = makeUrl(props.imageUrl)
   return (
-    <Transition
-      transitionName='fade'
-      appearTimeout={500}
-      transitionAppear
-      transitionEnter={false}
-      transitionLeave={false}
-    >
+  <FadeTransition>
     <div 
       className='projects__project-tile'
       style={{
@@ -25,7 +19,7 @@ const ProjectTile = props => {
           <span>{props.description}</span>
         </p>
     </div>
-  </Transition>
+  </FadeTransition>
   )
 }
 

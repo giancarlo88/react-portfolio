@@ -179,6 +179,13 @@ a:visited {
   opacity: 1;
   transition: all .5s ease-out; }
 
+.fade-enter {
+  opacity: 0; }
+
+.fade-enter-active {
+  opacity: 1;
+  transition: all .5s ease-out; }
+
 .fade-leave {
   opacity: 1; }
 
