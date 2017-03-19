@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
+import Transition from './Transition'
 
 class Title extends Component {
   render() {
     return (
+      <Transition
+        transitionName='fade'
+        appearTimeout={1000}
+        leaveTimeout={1000}
+        enterTimeout={1000}
+        transitionAppear
+        transitionEnter
+        transitionLeave
+      > 
       <div className="title">
         <h1>Giancarlo Galliani</h1>
         <div className='title__signature'/>
@@ -13,6 +23,7 @@ class Title extends Component {
             <Link className="title__link" to="sm">[Contact]</Link>
           </h4>
         </div>
+      </Transition>
       )
     }
   }

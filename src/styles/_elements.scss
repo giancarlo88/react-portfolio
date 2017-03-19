@@ -5,3 +5,10 @@ body, html, #root {
   height: 100%;
   font-family: 'Avenir', Helvetica, sans-serif
 }
+
+a,
+a:visited { 
+    color: $text-color;
+    text-decoration: none;
+    transition: $link-transition;
+}

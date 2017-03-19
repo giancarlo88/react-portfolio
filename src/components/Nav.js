@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import { Link } from 'react-router'
 
 const Nav = props => { 
   const { isOpen, handleCloseClick } = props
@@ -7,7 +8,7 @@ const Nav = props => {
     <nav className={classNames}>
       <div onClick={handleCloseClick} className='navigation__close'>&times;</div>
       <ul>
-        <li className='navigation__menu-item'>home</li>
+        <Link to='/'><li className='navigation__menu-item'>home</li></Link>
         <li className='navigation__menu-item'>about</li>
         <li className='navigation__menu-item'>projects</li>
         <li className='navigation__menu-item'>contact</li>

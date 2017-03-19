@@ -16,4 +16,8 @@ Header.propTypes = {
   navOpen: PropTypes.bool
 }
 
+Header.defaultProps = {
+  navOpen: false
+}
+
 export default Header

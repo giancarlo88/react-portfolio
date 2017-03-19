@@ -3,7 +3,7 @@
   height: $header-height;
   width: 100%;
   background: #cccccc;
-  padding: 5px 20px;
+  padding: 5px 15px;
   position: absolute;
   top: 0;
   z-index: 100;
@@ -12,8 +12,9 @@
     background-image: url(../assets/burgermenu.svg);
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
     float: right;
-    height: 40px;
-    width: 40px;
+    height: $burger-menu-size;
+    width: $burger-menu-size;
   }
 }

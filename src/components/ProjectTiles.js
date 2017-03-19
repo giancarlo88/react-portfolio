@@ -8,16 +8,16 @@ const ProjectTiles = props => {
         { projects.map( (item, index) => {
             let { title, description, image, tags } = item
             let tile = 
-              <ProjectTile 
-                key={index}
-                title={title}
-                description={description}
-                imageUrl={image}
-                tags={tags}
-              />
+                <ProjectTile 
+                  key={index}
+                  title={title}
+                  description={description}
+                  imageUrl={image}
+                  tags={tags}
+                />
               // Return only tiles that match the current filter. If no filters are set, return all tiles.
              return (
-            (( currentFilter && item.tags.indexOf(currentFilter) > 0) || !currentFilter || currentFilter === 'all' ) && tile
+            (( currentFilter && item.tags.indexOf(currentFilter) >= 0) || !currentFilter || currentFilter === 'all' ) && tile
               )
             }
         )}

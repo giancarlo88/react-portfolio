@@ -1,1 +1,5 @@
-$header-height: 50px;
+$text-color: #111111;
+
+$header-height: 25px;
+$burger-menu-size: calc(#{$header-height} - calc( 0.4 * #{$header-height}));
+$link-transition: transform .5s ease-out, color .5s ease-out;
