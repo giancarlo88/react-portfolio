@@ -5,7 +5,6 @@ import FadeTransition from './FadeTransition'
 class Title extends Component {
   render() {
     return (
-      <FadeTransition> 
       <div className="title">
         <h1>Giancarlo Galliani</h1>
         <div className='title__signature'/>
@@ -15,7 +14,6 @@ class Title extends Component {
             <Link className="title__link" to="contact">[Contact]</Link>
           </h4>
         </div>
-      </FadeTransition>
       )
     }
   }

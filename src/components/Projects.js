@@ -35,7 +35,6 @@ class Projects extends Component {
     const tags = getTags(projects)
     console.log(tags)
     return (
-      <FadeTransition>
       <div className='projects'>
         <FilterTags
           tags={tags}
@@ -47,7 +46,6 @@ class Projects extends Component {
           currentFilter={this.state.filterTag}
         />
       </div>
-    </FadeTransition>
     )
   }
 }

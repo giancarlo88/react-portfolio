@@ -1,7 +1,11 @@
 @import 'variables.scss';
 @import 'elements.scss';
+@import 'layout.scss';
+
+/* Components */
+@import 'transitions.scss';
+@import 'header.scss';
 @import 'title.scss';
 @import 'projects.scss';
-@import 'header.scss';
 @import 'nav.scss';
-@import 'transitions.scss';
+@import 'contact.scss'
