@@ -5,7 +5,6 @@ import FadeTransition from './FadeTransition'
 const ProjectTile = props => {
   let url = makeUrl(props.imageUrl)
   return (
-  <FadeTransition>
     <div 
       className='projects__project-tile'
       style={{
@@ -19,7 +18,6 @@ const ProjectTile = props => {
           <span>{props.description}</span>
         </p>
     </div>
-  </FadeTransition>
   )
 }
 

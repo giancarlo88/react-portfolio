@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { HashRouter as Router, Route } from 'react-router-dom'
 import App from './components/App'
 import Title from './components/Title'
+import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Header from './components/Header'
@@ -30,6 +31,7 @@ ReactDOM.render(
     <div>
       <Header />
       <FadeRoute exact component={Title} path='/' />
+      <FadeRoute component={About} path='/about' />
       <FadeRoute component={Projects} path='/projects' />
       <FadeRoute component={Contact} path='/contact' />
     </div>  

@@ -12,11 +12,15 @@ $border-style: 1px solid #aaaaaa;
     justify-content: flex-start;
   }
   &__tiles {
+    width: 100%;
+    
+    &>div {
     display: flex; 
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
     width: 100%;
+    
 
     @media (min-width: 768px) {
         flex-direction: row;
@@ -24,6 +28,7 @@ $border-style: 1px solid #aaaaaa;
         justify-content: center;
         align-items: flex-start;
     }
+  }
   }
     &__project-tile {
         cursor: pointer;

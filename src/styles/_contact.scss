@@ -1,0 +1,56 @@
+.contact {
+  font-size: 20px;
+  &__list {
+
+  }
+  
+
+  &__list-item { 
+    list-style-type: none;
+    background-size: 25px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+    transition: background-size .5s ease;
+    
+    span {
+      display: inline-block;
+      transform: translate3d(0, 0, 0);
+      transition: transform .5s ease;
+      transition-delay: .25s;
+      padding-left: 35px;
+    }
+
+    &:hover {
+      background-size: 30px;
+      span {
+        // TODO: Write an animation to have it float around back and forth
+        transform: translate3d(5px, 0, 0);
+      }
+    }
+
+    &--linkedin {
+      background-image: url(../assets/linkedin-logo.png)
+    }
+
+    &--github {
+      background-image: url(../assets/github-logo.svg)
+    }
+
+    &--twitter {
+      background-image: url(../assets/twitter-logo.svg);
+      background-size: 30px;
+      background-position: -1px 0;
+      
+      &:hover {
+        background-size: 35px;
+      }
+    }
+
+    &--email {
+      background-image: url(../assets/mail-icon.svg)
+    }
+  }
+
+
+}

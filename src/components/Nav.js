@@ -8,10 +8,18 @@ const Nav = props => {
     <nav className={classNames}>
       <div onClick={handleCloseClick} className='navigation__close'>&times;</div>
       <ul>
-        <Link to='/'><li className='navigation__menu-item'>home</li></Link>
-        <li className='navigation__menu-item'>about</li>
-        <li className='navigation__menu-item'>projects</li>
-        <li className='navigation__menu-item'>contact</li>
+        <Link to='/' onClick={handleCloseClick}>
+          <li className='navigation__menu-item'>home</li>
+        </Link>
+        <Link to='/about' onClick={handleCloseClick}>
+          <li className='navigation__menu-item'>about</li>
+        </Link>
+        <Link to='/projects' onClick={handleCloseClick}>
+          <li className='navigation__menu-item'>projects</li>
+        </Link>
+        <Link to='/contact' onClick={handleCloseClick}>
+          <li className='navigation__menu-item'>contact</li>
+        </Link>
       </ul>
     </nav>
   )
