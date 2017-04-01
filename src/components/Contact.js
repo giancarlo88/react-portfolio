@@ -4,7 +4,7 @@ import FadeTransition from './FadeTransition'
 const Contact = props => {
   return (
     <div className='contact'>
-      Connect with me! You've got lots of options... 
+      <h4 className='contact__heading'>Connect with me! You've got lots of options...</h4> 
       <ul className='contact__list'>
         <a href="#">
           <li className='contact__list-item contact__list-item--linkedin'>

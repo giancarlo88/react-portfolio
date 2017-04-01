@@ -1,12 +1,10 @@
-$border-style: 1px solid #aaaaaa;
-
 .projects {
   padding-top: $header-height;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
@@ -22,7 +20,7 @@ $border-style: 1px solid #aaaaaa;
     width: 100%;
     
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -39,10 +37,10 @@ $border-style: 1px solid #aaaaaa;
         background-size: 130%;
         background-position: 50%;
         background-repeat: no-repeat;
-        border-radius: 5px;
+        border-radius: $border-radius;
         border-bottom: $border-style;
         border-right: $border-style;
-        box-shadow: 2px 2px 16px 2px #aaaaaa;
+        box-shadow: $box-shadow-style;
         width: 250px;
 
         &:focus, 
@@ -68,7 +66,7 @@ $border-style: 1px solid #aaaaaa;
       text-align: center;
       top: 0;
 
-      @media (min-width: 768px) {
+      @media (min-width: $tablet-width) {
         text-align: right;
         min-width: 200px;
       }
@@ -84,7 +82,7 @@ $border-style: 1px solid #aaaaaa;
       &--selected {
           color: #aaaaaa;
           transform: translate3d(0, -5px, 0);
-          @media(min-width: 768px) {
+          @media(min-width: $tablet-width) {
               transform: translate3d(5px, 0, 0);
           }
       }
@@ -94,7 +92,7 @@ $border-style: 1px solid #aaaaaa;
         transform: translate3d(0, -5px, 0);
       }
       
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
         display: block;
         &:hover { 
             transform: translate3d(5px, 0, 0);

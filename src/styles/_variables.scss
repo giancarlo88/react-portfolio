@@ -1,5 +1,21 @@
+/* Borders */ 
+$border-style: 1px solid #aaaaaa;
+$border-radius: 5px;
+
+/* Box Shadow */
+$box-shadow-style:  2px 2px 16px 2px #aaaaaa;
+
+/* Breakpoins */
+$mobile-width: 420px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+/* Colours */
 $text-color: #111111;
 
+/* Header */ 
 $header-height: 25px;
 $burger-menu-size: calc(#{$header-height} - calc( 0.4 * #{$header-height}));
+
+/* Transitions */ 
 $link-transition: transform .5s ease-out, color .5s ease-out;
