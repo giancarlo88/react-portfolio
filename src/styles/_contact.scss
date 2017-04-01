@@ -4,20 +4,37 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 
   &__heading {
-      text-align: center;
+      font-size: 24px;
   }
 
   &__list {
     padding: 0;
+    text-align: left;
+  }
+
+  &__emoji {
+    cursor: pointer;
+    display: inline-block;
+    transform-origin: center center;
+    animation: grow-shrink;
+    animation-duration: 1s;
+    
+    &:hover {
+        animation: grow-shrink;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
   }
   
   &__list-item { 
-    list-style-type: none;
     background-size: 25px;
     background-position: 0;
     background-repeat: no-repeat;
+    font-size: 22px;
+    list-style-type: none;
     margin: 10px 0;
     transition: background-size .5s ease;
     
