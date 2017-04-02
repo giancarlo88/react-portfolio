@@ -2,7 +2,7 @@
   box-sizing: border-box;
   height: $header-height;
   width: 100%;
-  background: #cccccc;
+  background: $header-color;
   padding: 5px 15px;
   position: absolute;
   top: 0;
@@ -18,3 +18,4 @@
     width: $burger-menu-size;
   }
 }
+

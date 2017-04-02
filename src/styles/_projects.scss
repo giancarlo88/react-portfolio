@@ -59,14 +59,14 @@
 
     &__title,
     &__description {
-        color: #111111;
+        color: $text-color;
         span {
-            background: rgba(255, 255, 255, .8);
+            background: $transparency-color;
         }
     }
 
     &__filters {
-        background: rgba(255, 255, 255, .8);
+        background: $transparency-color;
         padding: 20px;
         position: fixed;
         position: sticky;
@@ -75,6 +75,7 @@
         @media (min-width: $tablet-width) {
             text-align: right;
             min-width: 200px;
+            background: transparent;
         }
     }
 

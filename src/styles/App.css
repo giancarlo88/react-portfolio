@@ -5,6 +5,7 @@
 /* Header */
 /* Transitions */
 body, html, #root {
+  background-color: #CDDDDD;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -13,7 +14,7 @@ body, html, #root {
 
 a,
 a:visited {
-  color: #111111;
+  color: #2E2E3A;
   text-decoration: none;
   transition: transform 0.5s ease-out, color 0.5s ease-out; }
 
@@ -87,7 +88,7 @@ a:visited {
   box-sizing: border-box;
   height: 25px;
   width: 100%;
-  background: #cccccc;
+  background: #2E2F2F;
   padding: 5px 15px;
   position: absolute;
   top: 0;
@@ -172,7 +173,7 @@ a:visited {
     .projects__project-tile:focus, .projects__project-tile:hover {
       background-size: 135%; }
   .projects__title, .projects__description {
-    color: #111111; }
+    color: #2E2E3A; }
     .projects__title span, .projects__description span {
       background: rgba(255, 255, 255, 0.8); }
   .projects__filters {
@@ -185,7 +186,8 @@ a:visited {
     @media (min-width: 768px) {
       .projects__filters {
         text-align: right;
-        min-width: 200px; } }
+        min-width: 200px;
+        background: transparent; } }
   .projects__filter {
     cursor: pointer;
     transition: transform 0.5s ease-out, color 0.5s ease-out;
@@ -236,6 +238,9 @@ a:visited {
     cursor: pointer;
     transform: translate3d(0, 0, 0);
     transition: transform 0.5s ease-out, color 0.5s ease-out; }
+    @media (min-width: 768px) {
+      .navigation__menu-item {
+        font-size: 20px; } }
     .navigation__menu-item:hover {
       transform: translate3d(-5px, 0, 0); }
 

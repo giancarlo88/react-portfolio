@@ -7,7 +7,7 @@ const ProjectTiles = props => {
   return (
       <div className='projects__tiles'>
         <TileTransition>
-        { projects.map( (item, index) => {
+        { projects.reverse().map( (item, index) => {
             let { title, description, imageUrl, tags, linkUrl } = item
             let tile = 
             <div key={index} className='projects__tile-container'>
