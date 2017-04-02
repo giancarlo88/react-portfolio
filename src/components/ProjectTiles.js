@@ -8,14 +8,15 @@ const ProjectTiles = props => {
       <div className='projects__tiles'>
         <TileTransition>
         { projects.map( (item, index) => {
-            let { title, description, image, tags } = item
+            let { title, description, imageUrl, tags, linkUrl } = item
             let tile = 
-            <div key={index}>
-                <ProjectTile 
+            <div key={index} className='projects__tile-container'>
+                <ProjectTile
                   title={title}
                   description={description}
-                  imageUrl={image}
+                  imageUrl={imageUrl}
                   tags={tags}
+                  linkUrl={linkUrl}
                 />
               </div>
               // Return only tiles that match the current filter. If no filters are set, return all tiles.

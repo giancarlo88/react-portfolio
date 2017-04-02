@@ -1,7 +1,9 @@
+const BASE_URL = 'http://www.ggalliani.com/projects'
 const PATH = 'assets/'
 const PLACEHOLDER = 'placeholder.png'
 
-const makeUrl = url => {
+
+export const makeImageUrl = url => {
   if (url) {
     return  PATH + url
   } else {
@@ -9,4 +11,5 @@ const makeUrl = url => {
   }
 }
 
-export default makeUrl
+export const makeLinkUrl = url => BASE_URL + url
+

@@ -1,33 +1,41 @@
 .projects {
-  padding-top: $header-height;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    padding-top: $header-height;
 
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  &__tiles {
-    width: 100%;
-    
-    &>div {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    width: 100%;
-    
-
-    @media (min-width: $tablet-width) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
+    &__heading {
+        text-align: center;
     }
-  }
-  }
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @media (min-width: $tablet-width) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+    
+    &__tiles {
+        width: 100%;
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            width: 100%;
+            
+            @media (min-width: $tablet-width) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+            }
+        }
+    }
+
     &__project-tile {
         cursor: pointer;
         height: 150px;
@@ -42,8 +50,8 @@
         border-right: $border-style;
         box-shadow: $box-shadow-style;
         width: 250px;
-
-        &:focus, 
+        
+        &:focus,
         &:hover {
             background-size: 135%;
         }
@@ -52,54 +60,54 @@
     &__title,
     &__description {
         color: #111111;
-
-        span { 
+        span {
             background: rgba(255, 255, 255, .8);
         }
     }
 
     &__filters {
-      background: rgba(255, 255, 255, .8);
-      padding: 20px;
-      position: fixed;
-      position: sticky;
-      text-align: center;
-      top: 0;
-
-      @media (min-width: $tablet-width) {
-        text-align: right;
-        min-width: 200px;
-      }
+        background: rgba(255, 255, 255, .8);
+        padding: 20px;
+        position: fixed;
+        position: sticky;
+        text-align: center;
+        top: 0;
+        @media (min-width: $tablet-width) {
+            text-align: right;
+            min-width: 200px;
+        }
     }
 
-    &__filter { 
-      cursor: pointer; 
-      transition: $link-transition;
-      display: inline-block;
-      margin: 5px;
-      transform: translate3d(0, 0, 0);
-
-      &--selected {
-          color: #aaaaaa;
-          transform: translate3d(0, -5px, 0);
-          @media(min-width: $tablet-width) {
-              transform: translate3d(5px, 0, 0);
-          }
-      }
-
-      &:hover {
-        color: #aaaaaa;
-        transform: translate3d(0, -5px, 0);
-      }
-      
-    @media (min-width: $tablet-width) {
-        display: block;
-        &:hover { 
-            transform: translate3d(5px, 0, 0);
+    &__filter {
+        cursor: pointer;
+        transition: $link-transition;
+        display: inline-block;
+        margin: 5px;
+        transform: translate3d(0, 0, 0);
+        
+        &--selected {
+            color: $link-highlight-color;
+            transform: translate3d(0, -5px, 0);
+            @media(min-width: $tablet-width) {
+                transform: translate3d(5px, 0, 0);
             }
         }
-    &__fixed-filter-container {
-      position: fixed;
+    
+        &:hover {
+            color: $link-highlight-color;
+            transform: translate3d(0, -5px, 0);
+        }
+        
+        @media (min-width: $tablet-width) {
+            display: block;
+            
+            &:hover {
+                transform: translate3d(5px, 0, 0);
+            }
+        }
+        
+        &__fixed-filter-container {
+            position: fixed;
+        }
     }
-  }
 }

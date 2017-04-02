@@ -2,7 +2,7 @@ import React from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 const TileTransition = props => {
-  const { children, pathname } = props
+  const { children } = props
   return (
     <ReactCSSTransitionGroup
       transitionName='tile-fade'

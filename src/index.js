@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter as Router, Route } from 'react-router-dom'
-import App from './components/App'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Title from './components/Title'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -11,7 +10,7 @@ import FadeTransition from './components/FadeTransition'
 import './styles/App.css';
 
 const FadeRoute = props => {
-  const { path, exact, component } = props
+  const { path, component } = props
   return (
     <Route exact path={path} render={({match}) => {
       return (
@@ -29,7 +28,7 @@ const FadeRoute = props => {
 ReactDOM.render(
   <Router>
     <div>
-      <Header />
+    <Header />
       <FadeRoute exact component={Title} path='/' />
       <FadeRoute component={About} path='/about' />
       <FadeRoute component={Projects} path='/projects' />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 const FadeTransition = props => {
@@ -14,6 +14,10 @@ const FadeTransition = props => {
      {React.cloneElement(children, {key: pathname})}
     </ReactCSSTransitionGroup>
   )
+}
+
+FadeTransition.propTypes = {
+  pathname: PropTypes.string
 }
 
 export default FadeTransition

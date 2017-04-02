@@ -20,14 +20,28 @@
     display: inline-block;
     transform-origin: center center;
     animation: grow-shrink;
+    animation-delay: 1s;
     animation-duration: 1s;
+    width: 20px;
+    transform: scale3d(1, 1, 1) translate3d(-2px, 1px, 1px);
     
     &:hover {
         animation: grow-shrink;
+        animation-delay: 0;
         animation-duration: 1s;
         animation-iteration-count: infinite;
     }
   }
+
+     
+  &__list-text {
+      display: inline-block;
+      transform: translate3d(0, 0, 0);
+      transition: transform .5s ease;
+      transition-delay: .25s;
+      padding-left: 35px;
+      transform-origin: center;
+}
   
   &__list-item { 
     background-size: 25px;
@@ -37,23 +51,20 @@
     list-style-type: none;
     margin: 10px 0;
     transition: background-size .5s ease;
-    
-    span {
-      display: inline-block;
-      transform: translate3d(0, 0, 0);
-      transition: transform .5s ease;
-      transition-delay: .25s;
-      padding-left: 35px;
-    }
+  
 
     &:hover {
       background-size: 30px;
-      span {
+        .contact__list-text {
         // TODO: Write an animation to have it float around back and forth
-        transform: translate3d(5px, 0, 0);
+        animation: float-around;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
       }
     }
-
+  
+ 
     &--linkedin {
       background-image: url(../assets/linkedin-logo.png)
     }
@@ -64,11 +75,11 @@
 
     &--twitter {
       background-image: url(../assets/twitter-logo.svg);
-      background-size: 30px;
-      background-position: -1px 0;
+      background-size: 35px;
+      background-position: -5px -1px;
       
       &:hover {
-        background-size: 35px;
+        background-size: 40px;
       }
     }
 

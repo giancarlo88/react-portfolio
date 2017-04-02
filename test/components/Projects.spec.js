@@ -3,7 +3,8 @@ import { expect } from 'chai'
 import { shallow } from 'enzyme'
 
 import Projects from '../../src/components/Projects'
-import ProjectTile from '../../src/components/ProjectTile'
+import FilterTags from '../../src/components/FilterTags'
+import ProjectTiles from '../../src/components/ProjectTiles'
 
 describe('<Projects />', () => {
   
@@ -22,7 +23,11 @@ describe('<Projects />', () => {
     expect(wrapper.hasClass('projects')).to.be.true
   })
 
-  it('should render multiple <ProjectTile /> elements', () => {
-    expect(wrapper.find(ProjectTile)).to.have.length.greaterThan(0)
+  it('should render a <FilterTags /> element', () => {
+    expect(wrapper.find(FilterTags)).to.have.length(1)
+  })
+
+  it('should render a <ProjectTiles /> element', () => {
+    expect(wrapper.find(ProjectTiles)).to.have.length(1)
   })
 })

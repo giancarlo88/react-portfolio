@@ -12,8 +12,12 @@ it('should exist', () => {
   expect(wrapper).to.exist
 })
 
-it('should render a <div /> with className "project-tile"', () => {
-  expect(wrapper.hasClass('project-tile')).to.be.true
+it('should render an <a /> element', () => { 
+  expect(wrapper.type()).to.equal('a')
+})
+
+it('should contain a <div /> with className "projects__project-tile"', () => {
+  expect(wrapper.find('.projects__project-tile')).to.have.length.greaterThan(0)
 })
 
 it('should render a <h1> containing "Super awesome project title" if its title prop is set to "Super awesome project title" ', () => {

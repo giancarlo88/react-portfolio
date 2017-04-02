@@ -15,5 +15,4 @@ describe('<Title />', () => {
   it('should render a <div/>', () => {
     expect(wrapper.type()).to.equal('div')
   })
-
 })

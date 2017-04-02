@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import FadeTransition from './FadeTransition'
 
 const Contact = props => {
   return (
@@ -9,22 +8,22 @@ const Contact = props => {
       <ul className='contact__list'>
         <a href='https://uk.linkedin.com/in/giancarlo-galliani-0bb87ba8' target='_blank'>
           <li className='contact__list-item contact__list-item--linkedin'>
-            <span>LinkedIn</span>
+            <span className='contact__list-text'>LinkedIn</span>
           </li>
         </a>
         <a href='http://www.github.com/giancarlo88' target='_blank'>
           <li className='contact__list-item contact__list-item--github'>
-            <span>GitHub</span>
+            <span className='contact__list-text'>GitHub</span>
           </li>
         </a>
         <a href='http://www.twitter.com/juancarlito88' target='_blank'>
           <li className='contact__list-item contact__list-item--twitter'>
-            <span>Twitter</span>
+            <span className='contact__list-text'>Twitter</span>
           </li>
         </a>
         <a href='mailto:galliani.08@gmail.com' target='_blank'>
           <li className='contact__list-item contact__list-item--email'>
-            <span>Good old Email</span>
+            <span className='contact__list-text'>Good old Email</span>
             </li>
           </a>
       </ul>

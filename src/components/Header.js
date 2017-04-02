@@ -24,13 +24,4 @@ class Header extends Component {
 }
 }
 
-Header.propTypes = { 
-  handleNavClick: PropTypes.func, 
-  navOpen: PropTypes.bool
-}
-
-Header.defaultProps = {
-  navOpen: false
-}
-
 export default Header

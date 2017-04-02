@@ -28,11 +28,13 @@ const FilterTags = props => {
 
 FilterTags.propTypes = {
   tags: PropTypes.array,
-  handleChangeTag: PropTypes.func
+  handleChangeTag: PropTypes.func, 
+  selectedTag: PropTypes.string
 }
 
 FilterTags.defaultProps = {
-  tags: []
+  tags: [], 
+  selectedTag: 'all'
 }
 
 

@@ -30,4 +30,8 @@ Nav.propTypes = {
   handleCloseClick: PropTypes.func
 }
 
+Nav.defaultProps = {
+  isOpen: false
+}
+
 export default Nav

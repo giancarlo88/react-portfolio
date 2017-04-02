@@ -1,28 +1,43 @@
 .about {
     &__content {
-        display: flex;
-        flex-direction: column;
-
-        @media(min-width: $tablet-width) {
-            flex-direction: row; 
-        }
+        max-width: 800px;
+        margin: 0 auto;
     }
 
     &__picture {
         background-image: url('../assets/me.jpeg');
         background-size: cover;
-        border-radius: $border-radius;
         border-bottom: $border-style;
         border-left: $border-style;
         box-shadow: $box-shadow-style;
-        height: 300px;
-        min-width: 300px;
-        margin-top: 15px;
+        margin-right: 15px;
+        float: left;
+        height: 150px;
+
+        // If CSS shapes are supported, make a circle
+        @supports (shape-outside: circle(50%)) {
+            shape-outside: circle(50%);
+            border-radius: 50%;
+        };
+
+        // Fallback for Firefox, etc...
+        border-radius: 10px;
+        width: 150px;
+
+        @media (min-width: $tablet-width) {
+            width: 300px;
+            height: 300px;
+        }
     }
 
     &__text {
+        line-height: 1.5;
         @media (min-width: $tablet-width) {
             padding: 0 20px;
         }
+    }
+
+    &__heading {
+        text-align: center;
     }
 }
