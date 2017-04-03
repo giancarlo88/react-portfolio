@@ -4,10 +4,10 @@ const getTags = projects => {
     const tags = currentProject.tags
     let newTags = []
     if (Array.isArray(tags)) {
-      currentProject.tags.forEach((tag) => {
+      currentProject.tags.reverse().forEach((tag) => {
       if (typeof tag === 'string') {
         // Check if the tag was added already
-        return otherTags && otherTags.indexOf(tag) < 0 && newTags.push(tag)
+        return otherTags && otherTags.indexOf(tag) < 0 && newTags.unshift(tag)
         }
       })
     }

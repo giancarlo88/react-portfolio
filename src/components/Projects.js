@@ -4,6 +4,9 @@ import FilterTags from './FilterTags'
 import ProjectTiles from './ProjectTiles'
 import getTags from '../utils/getTags'
 
+
+const tags = getTags(projects)
+
 class Projects extends Component {
   constructor () {
     super()
@@ -18,7 +21,6 @@ class Projects extends Component {
     })
   }
   render() {
-    const tags = getTags(projects)
     return (
       <div className='projects'>
         <h2 className='projects__heading'>Projects</h2>

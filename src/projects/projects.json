@@ -1,14 +1,14 @@
 [
   {
     "title": "Glenn Gould Tribute Page", 
-    "description": "My first Free Code Camp Project. This is a self-designed tribute page.",
+    "description": "My first Free Code Camp Project, and my first website ever...",
     "imageUrl":"tp.png",
     "tags": ["introductory", "free code camp", "api"], 
     "linkUrl": "/tp"
   },
   {
     "title": "Weather App", 
-    "description": "A simple app that uses browser geolocation and a free API to show you the weather.",
+    "description": "A simple app that uses browser geolocation and a free API to show you, well, the weather.",
     "imageUrl":"wa.png",
     "tags": ["introductory", "free code camp", "api"], 
     "linkUrl": "/wa"
@@ -23,14 +23,14 @@
   },
   {
     "title": "Javascript BlackJack", 
-    "description": "Play 21 BlackJack in your browser!",
+    "description": "Play some BlackJack! No real money required.",
     "imageUrl":"bj.png",
     "tags": ["games"], 
     "linkUrl": "/bj"
   },
   {
     "title": "Javascript Calculator", 
-    "description": "For the maths-lover in all of us",
+    "description": "For when you don't feel like searching your desk (or Google).",
     "imageUrl":"jc.png",
     "tags": ["free code camp"], 
     "linkUrl": "/jc"
@@ -72,7 +72,7 @@
   },
   {
     "title": "Free Code Camp Leaderboard", 
-    "description": "View and arrange the top 100 users of Free Code Camp",
+    "description": "View and arrange the top 100 users of Free Code Camp.",
     "imageUrl":"lb.png",
     "tags": ["free code camp", "react"], 
     "linkUrl": "/lb"
