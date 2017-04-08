@@ -143,19 +143,18 @@ a:visited {
         align-items: flex-start;
         justify-content: flex-start; } }
   .projects__tiles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
     width: 100%; }
-    .projects__tiles > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
-      width: 100%; }
-      @media (min-width: 768px) {
-        .projects__tiles > div {
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: flex-start; } }
+    @media (min-width: 768px) {
+      .projects__tiles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start; } }
   .projects__project-tile {
     cursor: pointer;
     height: 150px;
