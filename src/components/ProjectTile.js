@@ -6,7 +6,7 @@ const ProjectTile = props => {
   let _imgUrl = makeImageUrl(imageUrl)
   let _linkUrl = makeLinkUrl(linkUrl)
   return (
-    <a href={_linkUrl}>
+    <a target='_blank' href={_linkUrl}>
       <div 
         className='projects__project-tile'
         style={{

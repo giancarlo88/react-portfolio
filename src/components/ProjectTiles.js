@@ -10,7 +10,7 @@ const ProjectTiles = props => {
             let { title, description, imageUrl, tags, linkUrl } = item
             // Note: the TileTransition is rendered within the map as the animations otherwise appeared janky.
             let tile = 
-            <TileTransition>
+            <TileTransition key={index}>
               <div key={index} className='projects__tile-container'>
                   <ProjectTile
                     title={title}

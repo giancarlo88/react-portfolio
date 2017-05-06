@@ -7,11 +7,9 @@ const TileTransition = props => {
     <ReactCSSTransitionGroup
       transitionName='tile-fade'
       transitionAppear
-      transitionEnter
-      transitionLeave
+      transitionEnter={false}
+      transitionLeave={false}
       transitionAppearTimeout={500}
-      transitionEnterTimeout={500}
-      transitionLeaveTimeout={1000}
       component='div'
     >
       {children}
