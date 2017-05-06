@@ -93,7 +93,7 @@
   }, 
   {
     "title": "Spotify Search App", 
-    "description": "A quick app that uses a GraphQL API to search for songs and artists",
+    "description": "A quick app that uses a GraphQL API to search for songs and artists.",
     "imageUrl":"sa.png",
     "tags": ["react", "api", "GraphQL"], 
     "linkUrl": "/sa"
