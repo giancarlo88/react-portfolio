@@ -1,101 +1,108 @@
 [
   {
-    "title": "Glenn Gould Tribute Page", 
+    "title": "Glenn Gould Tribute Page",
     "description": "My first Free Code Camp Project, and my first website ever...",
     "imageUrl":"tp.png",
-    "tags": ["introductory", "free code camp", "api"], 
+    "tags": ["introductory", "free code camp", "api"],
     "linkUrl": "/tp"
   },
   {
-    "title": "Weather App", 
+    "title": "Weather App",
     "description": "A simple app that uses browser geolocation and a free API to show you, well, the weather.",
     "imageUrl":"wa.png",
-    "tags": ["introductory", "free code camp", "api"], 
+    "tags": ["introductory", "free code camp", "api"],
     "linkUrl": "/wa"
   },
   {
-    "title": "Random Quote Generator", 
+    "title": "Random Quote Generator",
     "description": "'In order to obtain the impossible, one must attempt the absurd' -- M. de Cervantes",
     "imageUrl":"qg.png",
-    "tags": ["introductory", "free code camp", "api"], 
+    "tags": ["introductory", "free code camp", "api"],
     "linkUrl": "/qg"
 
   },
   {
-    "title": "Javascript BlackJack", 
+    "title": "Javascript BlackJack",
     "description": "Play some BlackJack! No real money required.",
     "imageUrl":"bj.png",
-    "tags": ["games"], 
+    "tags": ["games"],
     "linkUrl": "/bj"
   },
   {
-    "title": "Javascript Calculator", 
+    "title": "Javascript Calculator",
     "description": "For when you don't feel like searching your desk (or Google).",
     "imageUrl":"jc.png",
-    "tags": ["free code camp"], 
+    "tags": ["free code camp"],
     "linkUrl": "/jc"
   },
   {
-    "title": "Pomodoro Timer", 
+    "title": "Pomodoro Timer",
     "description": "Work 25 minutes (or one pomodoro) at a time.",
     "imageUrl":"pt.png",
-    "tags": ["free code camp", "utilities"], 
+    "tags": ["free code camp", "utilities"],
     "linkUrl": "/pt"
   },
   {
-    "title": "Wikipedia Search Tool", 
+    "title": "Wikipedia Search Tool",
     "description": "Use Wikipedia's API to search for and visit a Wikipedia page. Or visit a random one for fun.",
     "imageUrl":"wv.png",
-    "tags": ["free code camp", "utilities"], 
+    "tags": ["free code camp", "utilities"],
     "linkUrl": "/wv"
   },
   {
-    "title": "Tic Tac Toe", 
+    "title": "Tic Tac Toe",
     "description": "Replaces a pen and paper with Javascript",
     "imageUrl":"ttt.png",
-    "tags": ["free code camp", "games"], 
+    "tags": ["free code camp", "games"],
     "linkUrl": "/ttt"
   },
   {
-    "title": "Twitch.tv API Tool ", 
+    "title": "Twitch.tv API Tool ",
     "description": "Grab a list of streamers and see if they're streaming.",
     "imageUrl":"tv.png",
-    "tags": ["free code camp", "react", "utilities", "api"], 
+    "tags": ["free code camp", "react", "utilities", "api"],
     "linkUrl": "/tv"
   },
   {
-    "title": "Markdown Previewer", 
+    "title": "Markdown Previewer",
     "description": "React app that displays Markdown as you type.",
     "imageUrl":"mp.png",
-    "tags": ["free code camp", "react", "utilities"], 
+    "tags": ["free code camp", "react", "utilities"],
     "linkUrl": "/mp"
   },
   {
-    "title": "Free Code Camp Leaderboard", 
+    "title": "Free Code Camp Leaderboard",
     "description": "View and arrange the top 100 users of Free Code Camp.",
     "imageUrl":"lb.png",
-    "tags": ["free code camp", "react"], 
+    "tags": ["free code camp", "react"],
     "linkUrl": "/lb"
   },
   {
-    "title": "Simon", 
+    "title": "Simon",
     "description": "It's you versus your memory.",
     "imageUrl":"s.png",
-    "tags": ["free code camp", "games"], 
+    "tags": ["free code camp", "games"],
     "linkUrl": "/s"
   },
   {
-    "title": "The London Learning Map", 
+    "title": "The London Learning Map",
     "description": "Have a look at where I spent a good part of my free time learning how to code across London.",
     "imageUrl":"llm.png",
-    "tags": ["react", "maps"], 
+    "tags": ["react", "maps"],
     "linkUrl": "/llm"
-  }, 
+  },
   {
-    "title": "Spotify Search App", 
+    "title": "Spotify Search App",
     "description": "A quick app that uses a GraphQL API to search for songs and artists.",
     "imageUrl":"sa.png",
-    "tags": ["react", "api", "GraphQL"], 
+    "tags": ["react", "api", "GraphQL"],
     "linkUrl": "/sa"
+  },
+  {
+    "title": "Cryptocurrency Graph",
+    "description": "A super simple graph that shows how my cryptocurrency values have changed over time.",
+    "imageUrl":"cg.png",
+    "tags": ["react", "api", "AWS"],
+    "linkUrl": "/cg"
   }
 ]

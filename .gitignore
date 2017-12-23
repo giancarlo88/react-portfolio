@@ -19,3 +19,4 @@ yarn-error.log*
 # Non-production CSS
 src/*.css
 
+.vscode
